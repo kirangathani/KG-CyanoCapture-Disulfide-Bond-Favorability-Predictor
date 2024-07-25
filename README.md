@@ -1,7 +1,5 @@
 # CyanoCapture-Disulfide-Bond-Favorability-Predictor
 
-# Protein Disulfide Bond Analysis Script
-
 This script analyzes protein structures to predict the likelihood of disulfide bond formation in different cellular environments (E. coli and Cyanobacteria). It uses PROPKA3 for pKa predictions and considers factors such as cysteine distances, existing disulfide bonds, and environmental pH.
 
 ## Prerequisites
