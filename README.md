@@ -63,6 +63,22 @@ The script generates a CSV file named `cysteine_analysis_summary.csv` with the f
 - The script uses the pKa values from this neutral pH analysis to predict protonation states at pH 7.2 (E. coli environment) and pH 7.5 (Cyanobacteria environment).
 - This approach assumes that pKa values don't significantly change over this small pH range.
 
+PropKa: Cysteine pKa Prediction
+Overview
+PropKa is a tool for predicting pKa values of titratable groups in proteins, including cysteines. This README explains how PropKa calculates pKa values for cysteine residues.
+Calculation Method
+PropKa uses a semi-empirical approach that considers various structural and environmental factors:
+
+Parameters that Propka uses:
+Base pKa: Starts with a reference pKa of ~9.0 for cysteines in solution.
+Desolvation Effects: Calculates burial depth within the protein structure.
+Hydrogen Bonding: Identifies potential H-bonds involving the thiol group.
+Electrostatic Interactions: Considers nearby charged groups.
+Coulombic Interactions: Calculates longer-range electrostatic effects.
+Empirical Rules: Applies rules for specific structural contexts.
+Iterative Calculation: Converges on consistent pKa predictions for all titratable groups.
+Temperature Dependence: Adjusts predictions based on temperature.
+
 ## Troubleshooting
 
 If you encounter issues:
