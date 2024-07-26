@@ -59,9 +59,9 @@ The script generates a CSV file named `cysteine_analysis_summary.csv` with the f
 
 ## Notes
 
-- The script uses pH 7.2 for E. coli and pH 7.5 for Cyanobacteria environments.
-- PROPKA analysis is run at neutral pH (7.0).
-- Ensure you have a stable internet connection for downloading PDB files.
+- PROPKA analysis is run at a stable, neutral pH (7.0) for all proteins.
+- The script uses the pKa values from this neutral pH analysis to predict protonation states at pH 7.2 (E. coli environment) and pH 7.5 (Cyanobacteria environment).
+- This approach assumes that pKa values don't significantly change over this small pH range.
 
 ## Troubleshooting
 
